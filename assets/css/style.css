@@ -2,9 +2,48 @@
 * {
     margin: 0;
 }
-
 :root {}
-
 h1, h2, h3, h4, h5, h6, p {
     text-wrap: balance;
+}
+
+a{
+    text-decoration: none;
+}
+nav{
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+}
+.superNav{
+    display: inline-block;
+    position: relative;
+    padding: 1rem;
+}
+.subNav {
+    display: none;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 100;
+    white-space: nowrap;
+    top: 100%;
+}
+.superNav:hover .subNav {
+    display: block;
+    right: auto;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.superNav:nth-child(2):hover .subNav {
+    left: 0;
+    transform: translateX(0%);
+}
+.superNav:last-child:hover .subNav {
+    right: 0;
+    left: auto;
+    transform: translateX(0%);
+}
+.subNav a{
+    padding: 1rem;
 }
