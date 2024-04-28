@@ -1,14 +1,15 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="dk">
 <head>
     <meta charset="UTF-8">
-    <meta name="description" content="">
-    <meta name="keywords" content="">
+    <meta name="description" content="En side hvor du kan se alle de fede opskrifter som eller gemmer sig for dig, alt til aftensmad, morgenmad og frokost, med eller uden kød og meget mere">
+    <meta name="keywords" content="Opskrifter">
     <meta name="author" content="MMD23, modul 5, Gruppe 8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title></title>
-    <link rel="icon" type="image/x-icon" href="./assets/img/favicon/">
+    <title>Madens Helte | Forside</title>
+    <link rel="icon" type="image/x-icon" href="./assets/img/favicon/faviconMH.png">
     <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/fontpage.css">
     <script src="./assets/js/script.js" defer></script>
 </head>
 <body>
@@ -60,10 +61,115 @@
         </nav>
     </header>
     <main>
-
+        <section class="heroCarousel">
+            <h2>Lorem, ipsum dolor.</h2> <br>
+            <p><a href="#">Se opskriften her</a></p>
+            <div class="carouselPositionContainer">
+                <div class="carouselPosition" id="cpCurrent"></div>
+                <div class="carouselPosition"></div>
+                <div class="carouselPosition"></div>
+                <div class="carouselPosition"></div>
+                <div class="carouselPosition"></div>
+            </div>
+        </section>
+        <section class="intro">
+            <p>Velkommen til <span>Madens Helte</span> alle fantasiens opskrifter kommer til live! Vi har et stort bibliotek fyldt med opskrifter som venter på at du finder dem og laver dem! Føler du dig inspireret til at dele din bedstemors gamle opskrifter? Det kan du sagtens her også, alt indhold er lavet af alle sidens fantastiske bruger!</p>
+        </section>
+        <section class="favArticle">
+            <h1>Fremhævet artikel</h1>
+            <article>
+                <a href="">
+                    <div class="favArticleImg"></div>
+                    <h2>Opskrifter til dine diabetiker venner</h2>
+                </a>
+            </article>
+        </section>
+        <section class="allArticles">
+            <h2>Alle artikler</h2>
+            <div class="allArticlesContainer">
+                <article class="article">
+                    <a href="#">
+                        <div class="articleImg" id="article1"></div>
+                        <h3>Er din diet ketovenlig?</h3>
+                    </a>
+                </article>
+                <article class="article">
+                    <a href="#">
+                        <div class="articleImg" id="article2"></div>
+                        <h3>Hot nyt: Kylling tartar!</h3>
+                    </a>
+                </article>
+                <article class="article">
+                    <a href="#">
+                        <div class="articleImg" id="article3"></div>
+                        <h3>PETA's forslag</h3>
+                    </a>
+                </article>
+                <article class="article">
+                    <a href="#">
+                        <div class="articleImg" id="article4"></div>
+                        <h3>Løber dit køleskab?</h3>
+                    </a>
+                </article>
+            </div>
+            <div class="loadMoreContainer">
+                <p class="loadMore">Indlæs flere</p>
+            </div>
+        </section>
+        <section class="youtubeVideo">
+            <div class="youtubeVideoContainer">
+                <h3>Kitchen Secrets: How To Cut Up A Whole Chicken</h3>
+                <p>Vil du gerne lære hvordan man skære en hel kylling ud ordenligt? Så har vi videoen til dig! Der er mange fordele ved at købe hele kyllinger, man får bedre smag og spare penge</p>
+               <iframe width="100%" height="700" src="https://www.youtube.com/embed/lyCI8_Jy-kk?si=epdNA0mib05xctT4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+        </section>
+        <section class="fep">
+            <h4>Mere inspiration</h4>
+            <div class="fepContainer">
+                <article class="fepSingle" id="fep1">
+                    <a href="">
+                        <div class="overlay">
+                            <h5>Lorem, ipsum dolor.</h5>
+                        </div>
+                    </a>
+                </article>
+                <article class="fepSingle" id="fep2">
+                    <a href="">
+                        <div class="overlay">
+                            <h5>Lorem, ipsum dolor.</h5>
+                        </div>
+                    </a>
+                </article>
+                <article class="fepSingle" id="fep3">
+                    <a href="">
+                        <div class="overlay">
+                            <h5>Lorem, ipsum dolor.</h5>
+                        </div>
+                    </a>
+                </article>
+            </div>
+        </section>
     </main>
     <footer>
-
+        <section class="fep">
+        </section>
+        <section class="footer">
+            <div>
+                <p><a href="tel:+4530250272">76 24 20 69</a></p>
+                <!--TLF to Martin Winther Clausen, just so that some rando don't randomly get called-->
+                <p>Adresse: Ballademagervej 556 <br> 9000 Aalborg</p>
+            </div>
+            <div class="soMe">
+                <a href="https://www.instagram.com/foodista/" target="_blank"><img src="./assets/img/icons/instagram.svg" alt="Instagram Ikon"></a>
+                <a href="https://www.pinterest.com/foodista/" target="_blank"><img src="./assets/img/icons/pinterest-p.svg" alt="Pinterest Ikon"></a>
+                <a href="https://twitter.com/i/flow/login?redirect_after_login=%2Ffoodista" target="_blank"><img src="./assets/img/icons/twitter.svg" alt=" Twitter Ikon"></a>
+                <a href="https://www.facebook.com/Foodista" target="_blank"><img src="./assets/img/icons/facebook-f.svg" alt="Facebook Ikon"></a>
+            </div>
+            <div class="faq">
+                <a href="#"><p>FAQ</p></a>
+            </div>
+        </section>
+        
     </footer>
 </body>
 </html>
