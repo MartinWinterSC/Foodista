@@ -90,6 +90,13 @@
     display: flex;
     justify-content: center;
     align-items: baseline;
+    transition: 0.3s ease-in-out;
+}
+
+.recipeArticleHero1:hover {
+     background-image:linear-gradient( rgba(0, 0, 0, 0.538), rgba(0, 0, 0, 0.25)), url(../img/pictures/cubastylePork.jpg);
+     cursor: pointer;
+     transition: .3 ease-in-out;
 }
 
 .recipeArticleHero2 {
@@ -104,6 +111,12 @@
     align-items: baseline;
 }
 
+.recipeArticleHero2:hover {
+    background-image:linear-gradient( rgba(0, 0, 0, 0.538), rgba(0, 0, 0, 0.25)), url(../img/pictures/morningMuffin.jpg);
+    cursor: pointer;
+    transition: .3 ease-in-out;
+}
+
 .recipeArticleHero3 {
     background-image: url(../img/pictures/salmondiabetes.jpg);
     height: 40vh;
@@ -114,6 +127,12 @@
     display: flex;
     justify-content: center;
     align-items: baseline;
+}
+
+.recipeArticleHero3:hover {
+    background-image:linear-gradient( rgba(0, 0, 0, 0.538), rgba(0, 0, 0, 0.25)), url(../img/pictures/salmondiabetes.jpg);
+    cursor: pointer;
+    transition: .3 ease-in-out;
 }
 
 .recipeArticleHero4 {
@@ -128,6 +147,12 @@
     align-items: baseline;
 }
 
+.recipeArticleHero4:hover {
+    background-image:linear-gradient( rgba(0, 0, 0, 0.538), rgba(0, 0, 0, 0.25)), url(../img/pictures/strawberryCake1.jpg);
+    cursor: pointer;
+    transition: .3 ease-in-out;
+}
+
 .recipeArticleHero5 {
     background-image: url(../img/pictures/kale1.png);
     height: 40vh;
@@ -138,6 +163,12 @@
     display: flex;
     justify-content: center;
     align-items: baseline;
+}
+
+.recipeArticleHero5:hover {
+    background-image:linear-gradient( rgba(0, 0, 0, 0.538), rgba(0, 0, 0, 0.25)), url(../img/pictures/kale1.png);
+    cursor: pointer;
+    transition: .3 ease-in-out;
 }
 
 .heroArticleText {
@@ -181,4 +212,9 @@
     list-style-type: none;
 }
 
+
+
 /* artikel section end */
+
+/* Cards mere inspiration */
+
