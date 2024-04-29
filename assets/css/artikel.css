@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
 :root {
     --backgroundLightYellow: hsla(37, 83%, 93%, 0.75);
     --backgroundOrange: #F2AE2F;
@@ -7,6 +9,32 @@
     --stndSpacing: 1rem;
     --largeSpacing: 2rem;
 
+}
+
+body {
+        font-family: "Poppins", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+}
+
+/* breadcrumbs */
+.breadcrumbsContainer a {
+    color: black;
+    font-style: italic;
+    font-size: .8rem;
+    transition: .3s ease-in-out;
+}
+
+.breadcrumbsContainer a:hover {
+    color: var(--red);
+    border-bottom: 1px solid #D95625;
+}
+
+
+.breadcrumbsContainer {
+    margin: 0 5%;
+    display: flex;
+    gap: .5rem;
 }
 
 /* intro section */
@@ -17,7 +45,7 @@
 }
 
 .introTextContainer {
-    margin: 0 10%;
+    margin: 0 5%;
     display: grid;
     grid-template-columns: 2fr 1fr;
     justify-content: center;
@@ -34,6 +62,7 @@
     font-size: 24px;
     line-height: 1.8rem;
     padding: 1.5rem;
+    border-radius: 10px;
 }
 
 .text p {
@@ -47,6 +76,7 @@
     grid-column: 2 / 3;
     height: 100%;
     background-color: var(--backgroundLightYellow);
+    border-radius: 10px;
 }
 
 .authorTextContainer {
@@ -55,6 +85,11 @@
 
 .authorContainer img {
     max-height: 41vh;
+    border-radius: 10px;
+}
+
+.title1 {
+    font-weight: 200;
 }
 
 .titleBold {
@@ -185,12 +220,15 @@
 .diabetesTextContainer {
     background-color: var(--backgroundOrange);
     color: white;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    margin-right: 1rem;
 }
 
 .diabetesTextContainer p {
-    margin: 0 10%;
+    margin: 0 5%;
     padding: 1rem .5rem; 
-    font-size: 1.2rem;
+    font-size: 16px;
     line-height: 1.6rem;
     width: 76ch;
 }
@@ -199,6 +237,8 @@
     background-color: var(--backgroundLightYellow);
     color: var(--red);
     padding: var(--stndSpacing);
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
 }
 
 .tagsDiabetes {
@@ -213,8 +253,6 @@
 }
 
 
-
 /* artikel section end */
 
 /* Cards mere inspiration */
-
