@@ -1,0 +1,55 @@
+/* recommended section */
+section.recommendations{
+    margin-left: 15vw;
+    margin-right: 15vw;
+}
+.recommendations h2{
+    /* color: white; */
+}
+div.recommendationsContainer{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 25px;
+}
+.cardInfo{
+    padding: 5px;
+    background-color: orange;
+    border-radius: 0 0 5px 5px;
+}
+.cardInfo h3, .cardInfo p{
+    color: white;
+}
+.cardInfo p{
+    display: inline-block;
+}
+
+/* info Icons */
+.infoIcon{
+    height: 1rem;
+}
+
+/* recipe overview */
+.recipeOverview{
+    display: flex;
+    gap: 50px;
+}
+
+/* filter */
+.filter{
+    background-color: red;
+}
+.filterCatagory{
+    display: flex;
+    flex-direction: column;
+}
+span{
+    border: orange solid;
+    min-width: 150px;
+}
+
+/* recipe overview section */
+.overview{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
