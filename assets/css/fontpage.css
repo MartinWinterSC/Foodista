@@ -7,7 +7,7 @@
     position: relative;
 }
 .heroCarousel h2{
-    background-color: #F2AE2F;
+    background-color: var(--primaryColor);
     color: white;
     font-family: lobster;
     font-size: 2rem;
@@ -68,7 +68,7 @@
 }
 .favArticle h1{
     font-family: lobster;
-    font-size: 1.5ren;
+    font-size: 1.5rem;
     margin-top: var(--sectionSpacing);
     margin-bottom: var(--generalSpacing);
 }
@@ -79,7 +79,7 @@
     border-radius: 5px 5px 0 0;
 }
 .favArticle h2{
-    background-color: #F2AE2F;
+    background-color: var(--primaryColor);
     text-align: center;
     color: white;
     font-size: 1.5rem;
