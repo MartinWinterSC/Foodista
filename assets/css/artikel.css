@@ -1,11 +1,12 @@
-/* artikler main */
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
 :root {
     --backgroundLightYellow: hsla(37, 83%, 93%, 0.75);
+    --backgroundOrange: #F2AE2F;
+    --red: #D95625;
     --stndSpacing: 1rem;
     --largeSpacing: 2rem;
-}
-.mainContainer {
-    margin: 0 10%;
+
 }
 
 /* intro section */
@@ -16,11 +17,13 @@
 }
 
 .introTextContainer {
+    margin: 0 10%;
     display: grid;
     grid-template-columns: 2fr 1fr;
     justify-content: center;
     gap: 1rem;
     height: fit-content;
+    margin-bottom: 5%;
 }
 
 .text {
@@ -67,3 +70,115 @@
 }
 
 /* Artikel section */
+.recipeDiabetesContainer {
+    min-width: 100vw;
+    margin-bottom: 4rem;
+}
+
+.diabetesTextContentContainer {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+}
+
+.recipeArticleHero1 {
+    background-image: url(../img/pictures/cubastylePork.jpg);
+    height: 40vh;
+    max-width: 100%; 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+}
+
+.recipeArticleHero2 {
+    background-image: url(../img/pictures/morningMuffin.jpg);
+    height: 40vh;
+    max-width: 100%; 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+}
+
+.recipeArticleHero3 {
+    background-image: url(../img/pictures/salmondiabetes.jpg);
+    height: 40vh;
+    max-width: 100%; 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+}
+
+.recipeArticleHero4 {
+    background-image: url(../img/pictures/strawberryCake1.jpg);
+    height: 40vh;
+    max-width: 100%; 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+}
+
+.recipeArticleHero5 {
+    background-image: url(../img/pictures/kale1.png);
+    height: 40vh;
+    max-width: 100%; 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+}
+
+.heroArticleText {
+    color: white;
+    font-family: "Lobster", sans-serif;
+    background-color: var(--backgroundOrange);
+    width: fit-content;
+    padding: .5rem;
+    text-align: center;
+    font-size: 1.8rem;
+    margin-top: var(--largeSpacing);
+}
+
+.diabetesTextContainer {
+    background-color: var(--backgroundOrange);
+    color: white;
+}
+
+.diabetesTextContainer p {
+    margin: 0 10%;
+    padding: 1rem .5rem; 
+    font-size: 1.2rem;
+    line-height: 1.6rem;
+    width: 76ch;
+}
+
+.diabetesArticleTag {
+    background-color: var(--backgroundLightYellow);
+    color: var(--red);
+    padding: var(--stndSpacing);
+}
+
+.tagsDiabetes {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+.tagsDiabetes li {
+    list-style-type: none;
+}
+
+/* artikel section end */
