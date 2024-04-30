@@ -54,24 +54,36 @@ h1{
 .plusAndMinusPortionSize{
     display: flex;
     align-items: center;
-    background-color: white;
-    border-radius: 6px;
+    /* background-color: white; */
     width: fit-content;
     margin-top: 1rem;
+    border: 4px;
+    
 }
-.recip_lessOrMoreBtn{
+.recipe_lessOrMoreBtn{
     background-color: white;
     border: none;
     text-align: center;
-    margin: .5rem 1rem .5rem 1rem;
-    padding: .5rem;
+    /* margin: .5rem 1rem .5rem 1rem; */
+    padding: 1rem 1.5rem 1rem 1.5rem;
     cursor: pointer;
+    border-right: 2px solid #faebd7;
+    border-left: 2px solid #faebd7;
 }
+.recipe_portionResult{
+    padding: .5rem;
+    background-color: white;
 
+}
+#recipe_lessBtn{
+    border-radius: 6px 0 0 6px;
+}
+#recipe_moreBtn{
+    border-radius: 0 6px 6px 0;
+}
 .ingredientlist{
     margin-top: 2rem;
 }
-
 .recipe_ingredientSection {
     background-color: #faebd7;
     margin-top: 1rem; 
@@ -104,6 +116,7 @@ h1{
 .preparation{
     padding: 2.5rem;
     border-top: 2px solid #FCF1DF;
+    margin-top: 1rem;
 }
 #cookingText_margin{
     margin-bottom: 1rem ;
