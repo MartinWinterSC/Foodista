@@ -2,7 +2,7 @@ const favContainerEl = document.querySelector(".recommendationsContainer");
 
 const baseURL = "https://foodapi.starsingh.dk/wp-json/wp/v2/posts";
 
-fetch(baseURL)
+fetch(baseURL+'?categories=3')
   .then((res) => res.json())
   .then((posts) => {
     posts.forEach((post) => {
