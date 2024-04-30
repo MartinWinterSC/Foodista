@@ -259,3 +259,51 @@ body {
 /* artikel section end */
 
 /* Cards mere inspiration */
+/* focused entry points */
+.fep{
+    margin-top: var(--sectionSpacing);
+    margin-bottom: var(--sectionSpacing);
+    margin-left: 15vw;
+    margin-right: 15vw;
+}
+.fep h4{
+    font-size: 1.5rem;
+    text-align: center;
+    margin-bottom: var(--generalSpacing);
+}
+.fepContainer{
+    height: 300px;
+    gap: var(--generalSpacing);
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+.fepSingle{
+    position: relative;
+    border-radius: 5px;
+}
+#fep1{
+    background: url('../img/pictures/Placeholder.png') center no-repeat;
+}
+#fep2{
+    background: url('../img/pictures/Placeholder.png') center no-repeat;
+}
+#fep3{
+    background: url('../img/pictures/Placeholder.png') center no-repeat;
+}
+.overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(217, 86, 37, 0.5);
+    border-radius: 5px;
+}
+.fep h5{
+    color: white;
+    font-size: 1rem;
+    position: absolute;
+    top: 50%;
+    right: 50%;
+    transform: translate(50%, -50%);
+}
