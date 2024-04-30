@@ -135,7 +135,7 @@ body {
 }
 
 .recipeArticleHero2 {
-    background-image: url(../img/pictures/morningMuffin.jpg);
+    background-image: url(../img/pictures/morningmuffin.jpg);
     height: 40vh;
     max-width: 100%; 
     background-position: center;
@@ -147,7 +147,7 @@ body {
 }
 
 .recipeArticleHero2:hover {
-    background-image:linear-gradient( rgba(0, 0, 0, 0.538), rgba(0, 0, 0, 0.25)), url(../img/pictures/morningMuffin.jpg);
+    background-image:linear-gradient( rgba(0, 0, 0, 0.538), rgba(0, 0, 0, 0.25)), url(../img/pictures/morningmuffin.jpg);
     cursor: pointer;
     transition: .3 ease-in-out;
 }
