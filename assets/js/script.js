@@ -19,6 +19,7 @@ fetch(baseURL + urlCategoryRecipe)
     selectedPosts.forEach((post) => {
       const favArticleHTML = `
         <article>
+        <a href="./Opskriften.html?id=${post.id}">
           <div class="articleImg" style="background: url('${post.acf.image.link}') center no-repeat;"></div>
           <div class="cardInfo" id="${post.id}">
             <h3>${post.acf.title}</h3>
@@ -28,6 +29,7 @@ fetch(baseURL + urlCategoryRecipe)
               <img src="./assets/img/icons/utensils-solid.svg" alt="" class="infoIcon">
             </div>
           </div>
+        </a>
         </article>`;
       favContainerEl.innerHTML += favArticleHTML;
     });
@@ -36,6 +38,7 @@ fetch(baseURL + urlCategoryRecipe)
     posts.forEach((post) => {
       const articleHTML = `
         <article>
+        <a href="./Opskriften.html?id=${post.id}">
           <div class="articleImg" style="background: url('${post.acf.image.link}') center no-repeat;"></div>
           <div class="cardInfo" id="${post.id}">
             <h3>${post.acf.title}</h3>
@@ -45,6 +48,7 @@ fetch(baseURL + urlCategoryRecipe)
               <img src="./assets/img/icons/utensils-solid.svg" alt="" class="infoIcon">
             </div>
           </div>
+        </a>
         </article>`;
       renderRecipesEL.innerHTML += articleHTML;
     });
