@@ -1,0 +1,112 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    margin: 10%;
+    line-height: 28px;
+}
+h1{
+    font-family: lobster;
+}
+.cookTimeIcon {
+    display: flex;
+    align-items: center;
+    color: #8e8e8e;
+}
+.cookTime{
+    margin-left: 10px;
+}
+#recipeInfoAndIcon{
+    margin: 20px 0 20px 0; 
+}
+.animatedIcon, a{
+    color: #F27D15;
+    font-size: 18px;
+}
+#iconText{
+    color: #8e8e8e;
+    margin-top: 4px;
+}
+.recipeFunctions{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 20px;
+    cursor: pointer;
+    
+}
+#recipeInfoAndIcon{
+    display: flex;
+}
+.recipeInfo{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.pecipePicture{
+    width: 100%;
+    height: 100%; 
+}
+.recipeText{
+    margin: 1rem 2.5rem 1rem 2.5rem;
+}
+.plusAndMinusPortionSize{
+    display: flex;
+    align-items: center;
+    background-color: white;
+    border-radius: 6px;
+    width: fit-content;
+    margin-top: 1rem;
+}
+.recip_lessOrMoreBtn{
+    background-color: white;
+    border: none;
+    text-align: center;
+    margin: .5rem 1rem .5rem 1rem;
+    padding: .5rem;
+    cursor: pointer;
+}
+
+.ingredientlist{
+    margin-top: 2rem;
+}
+
+.recipe_ingredientSection {
+    background-color: #faebd7;
+    margin-top: 1rem; 
+    padding: 2rem;
+}
+
+.recipe_checklistOfIngredient li {
+    list-style-type: none;
+    background-color: white;
+    margin-top: .2rem;
+    padding: .5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#borderOnList{
+    border-radius: 6px 6px 0 0;
+    margin-top: 1rem ;
+}
+#borderbttmOnList{
+    border-radius: 0 0 6px 6px;
+}
+.cookingTitle{
+    margin-bottom: 2rem;
+}
+.recipe_cookingInfo{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.preparation{
+    padding: 2.5rem;
+    border-top: 2px solid #FCF1DF;
+}
+#cookingText_margin{
+    margin-bottom: 1rem ;
+}
+
+

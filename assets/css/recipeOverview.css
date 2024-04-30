@@ -1,0 +1,111 @@
+/* hero section */
+.hero{
+    height: 400px;
+    background: url('../img/pictures/Placeholder.png') center no-repeat;
+    background-size: cover;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.hero h2{
+    background-color: var(--primaryColor);
+    color: white;
+    font-family: lobster;
+    font-size: 2rem;
+    display: inline-block;
+    padding: 5px;
+    border-radius: 5px;
+    transform: translate();
+}
+.hero p{
+    background-color: var(--primaryColor);
+    display: inline-block;
+    padding: 5px;
+    border-radius: 5px;
+    color: white;
+    margin-top: var(--generalSpacing);
+}
+
+/* recommended section */
+section.recommendations{
+    margin-left: 15vw;
+    margin-right: 15vw;
+}
+.recommendations h2{
+    margin-top: var(--sectionSpacing);
+    margin-bottom: var(--generalSpacing);
+}
+div.recommendationsContainer{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: var(--generalSpacing);
+}
+.cardInfo{
+    padding: 5px;
+    background-color: var(--primaryColor);
+    border-radius: 0 0 5px 5px;
+}
+.cardInfo h3, .cardInfo p{
+    color: white;
+}
+.cardInfo p{
+    display: inline-block;
+}
+
+/* info Icons */
+.infoIcon{
+    height: 1rem;
+}
+
+/* recipe overview */
+.recipeOverview{
+    display: flex;
+    gap: 50px;
+    margin-top:var(--sectionSpacing);
+}
+.overview{
+    width: 70vw;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+/* filter */
+.filter{
+    background-color: var(--offWhite);
+    width: 15vw;
+}
+.filter h4, .filter h5{
+    padding: 5px;
+    margin-top: 20px;
+    font-size: 1rem;
+}
+.filter h4{
+    text-align: center;
+    font-size: 1.2rem;
+}
+.filterCatagory{
+    flex-direction: column;
+}
+.filterCatagory span{
+    background-color: #ffe6bf;
+    padding: 5px;
+    border-radius: 5px;
+    margin: 0 5px 5px 5px;
+    display: flex;
+    justify-content: space-between;
+}
+.filterCatagory input{
+    justify-content: right;
+}
+
+/* article image */
+.articleImg{
+    height: 300px;
+    background-size: cover;
+    border-radius: 5px 5px 0 0;
+    background: url('../img/pictures/Placeholder.png') center no-repeat;
+    background-size: cover;
+}

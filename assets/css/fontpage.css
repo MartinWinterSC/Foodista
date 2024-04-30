@@ -1,0 +1,163 @@
+/* hero */
+.heroCarousel{
+    height: 400px;
+    background: url('../img/pictures/Placeholder.png') center no-repeat;
+    background-size: cover;
+    text-align: center;
+    position: relative;
+}
+.heroCarousel h2{
+    background-color: var(--primaryColor);
+    color: white;
+    font-family: lobster;
+    font-size: 2rem;
+    display: inline-block;
+    padding: 5px;
+    border-radius: 5px;
+    margin-top: var(--sectionSpacing);
+    transform: translate();
+}
+.heroCarousel p{
+    background-color: var(--highlightColor);
+    display: inline-block;
+    padding: 5px;
+    padding-left: 15px;
+    padding-right: 15px;
+    border-radius: 20px;
+    color: white;
+    margin-top: 165px;
+}
+.heroCarousel p a{
+    color: white;
+}
+.carouselPositionContainer{
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    margin: var(--generalSpacing);
+}
+.carouselPosition{
+    background-color: white;
+    height: 25px;
+    width: 25px;
+    border-radius: 20px;
+}
+#cpCurrent{
+    background-color: var(--highlightColor);
+}
+
+/* intro */
+.intro{
+    background-color: var(--offWhite);
+    display: flex;
+    justify-content: center;
+}
+.intro p{
+    padding-top: var(--sectionSpacing);
+    padding-bottom: var(--sectionSpacing);
+    max-width: 650px;
+}
+.intro p span{
+    font-weight: 600;
+}
+
+/* aricles */
+.favArticle{
+    margin-left: 15vw;
+    margin-right: 15vw;
+}
+.favArticle h1{
+    font-family: lobster;
+    font-size: 1.5rem;
+    margin-top: var(--sectionSpacing);
+    margin-bottom: var(--generalSpacing);
+}
+.favArticleImg{
+    height: 300px;
+    background: url('../img/pictures/Placeholder.png') center no-repeat;
+    background-size: cover;
+    border-radius: 5px 5px 0 0;
+}
+.favArticle h2{
+    background-color: var(--primaryColor);
+    text-align: center;
+    color: white;
+    font-size: 1.5rem;
+    border-radius: 0 0 5px 5px;
+    padding: 5px;
+}
+.allArticles{
+    margin-left: 15vw;
+    margin-right: 15vw;
+}
+.allArticlesContainer{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--generalSpacing);
+}
+.allArticles h2{
+    margin-top: var(--sectionSpacing);
+    margin-bottom: var(--generalSpacing);
+    font-family: lobster;
+}
+article.article h3{
+    background-color: var(--primaryColor);
+    color: white;
+    font-size: 1.5rem;
+    text-align: center;
+    border-radius: 0 0 5px 5px;
+}
+.articleImg{
+    height: 300px;
+    background-size: cover;
+    border-radius: 5px 5px 0 0;
+}
+#article1{
+    background: url('../img/pictures/Placeholder.png') center no-repeat;
+}
+#article2{
+    background: url('../img/pictures/Placeholder.png') center no-repeat;
+}
+#article3{
+    background: url('../img/pictures/Placeholder.png') center no-repeat;
+}
+#article4{
+    background: url('../img/pictures/Placeholder.png') center no-repeat;
+}
+.loadMoreContainer{
+    text-align: center;
+}
+.loadMore{
+    background-color: var(--highlightColor);
+    display: inline-block;
+    padding: 5px;
+    padding-left: 15px;
+    padding-right: 15px;
+    border-radius: 20px;
+    color: white;
+    margin-top: var(--generalSpacing);
+    margin-bottom: var(--sectionSpacing);
+}
+
+/* YouTube Video */
+.youtubeVideo{
+    background-color: var(--offWhite);
+    padding-top: var(--sectionSpacing);
+    padding-bottom: var(--sectionSpacing);
+}
+.youtubeVideo h3{
+    font-size: 1.5rem;
+    padding: 5px;
+    color: white;
+    
+}
+.youtubeVideo p{
+    padding: 5px;
+    color: white;
+}
+.youtubeVideoContainer{
+    background-color: var(--primaryColor);
+    margin-left: 15vw;
+    margin-right: 15vw;
+    border-radius: 5px;
+}

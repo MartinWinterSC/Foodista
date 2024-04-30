@@ -1,28 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 /* defaults */
-* {
+*{
     margin: 0;
+    font-family: poppins;
+    text-decoration: none;
+    transition: 0.3s;
 }
-:root {
-    
+:root{
+    /* colors */
+    --primaryColor: #F2AE2F;
+    --highlightColor: #F27D15;
+    --offWhite: #FCF1DF;
+
+    /* spacing */
+    --generalSpacing: 25px;
+    --sectionSpacing: 50px;
 }
-h1, h2, h3, h4, h5, h6, p {
+
+h1, h2, h3, h4, h5, h6, p{
+main
     text-wrap: balance;
 }
 
-a{
+/* navigation */
+header{
+    position: sticky;
+    top: 0px;
+    z-index: 100;
+}
+nav a{
     text-decoration: none;
+    color: white;
+    font-weight: 600;
 }
 nav{
     text-align: center;
     display: grid;
     grid-template-columns: repeat(6, 1fr);
+    background-color: var(--primaryColor);
 }
 .superNav{
     display: inline-block;
     position: relative;
-    padding: 1rem;
+    padding: 10px;
+    height: 25px;
 }
-.subNav {
+.subNav{
     display: none;
     position: absolute;
     left: 50%;
@@ -30,22 +53,115 @@ nav{
     z-index: 100;
     white-space: nowrap;
     top: 100%;
+    height: 25px;
+    background-color: var(--primaryColor);
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 .superNav:hover .subNav {
-    display: block;
-    right: auto;
+    display: inline-block;
     left: 50%;
     transform: translateX(-50%);
 }
 .superNav:nth-child(2):hover .subNav {
     left: 0;
+    right: auto;
     transform: translateX(0%);
+    text-wrap: nowrap;
 }
 .superNav:last-child:hover .subNav {
     right: 0;
     left: auto;
     transform: translateX(0%);
 }
+.superNav:hover{
+    background-color: var(--highlightColor);
+}
+.subNav a:hover{
+    background-color: var(--highlightColor);
+}
 .subNav a{
-    padding: 1rem;
+    padding: 11px;
+    padding-right: var(--generalSpacing);
+    padding-left: var(--generalSpacing);
+}
+
+/* focused entry points */
+.fep{
+    margin-top: var(--sectionSpacing);
+    margin-bottom: var(--sectionSpacing);
+    margin-left: 15vw;
+    margin-right: 15vw;
+}
+.fep h4{
+    font-size: 1.5rem;
+    text-align: center;
+    margin-bottom: var(--generalSpacing);
+}
+.fepContainer{
+    height: 300px;
+    gap: var(--generalSpacing);
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+.fepSingle{
+    position: relative;
+    border-radius: 5px;
+}
+#fep1{
+    background: url('../img/pictures/Placeholder.png') center no-repeat;
+}
+#fep2{
+    background: url('../img/pictures/Placeholder.png') center no-repeat;
+}
+#fep3{
+    background: url('../img/pictures/Placeholder.png') center no-repeat;
+}
+.overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(217, 86, 37, 0.5);
+    border-radius: 5px;
+}
+.fep h5{
+    color: white;
+    font-size: 1rem;
+    position: absolute;
+    top: 50%;
+    right: 50%;
+    transform: translate(50%, -50%);
+}
+
+/* footer */
+.footer{
+    background-color: var(--primaryColor);
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: var(--generalSpacing);
+    padding-left: var(--sectionSpacing);
+    padding-right: var(--sectionSpacing);
+    align-items: center;
+}
+.soMe{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-items: center;
+}
+.soMe img{
+    max-height: 50px;
+    min-width: 50px;
+    justify-content: center;
+}
+.faq{
+    text-align: right;
+}
+.footer p, .footer a{
+    color: white;
+}
+.faq p{
+    font-size: 2rem;
+    font-weight: 600;
 }

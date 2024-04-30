@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="author" content="MMD23, modul 5, Gruppe 8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Madens Helte | </title>
+    <link rel="icon" type="image/x-icon" href="./assets/img/favicon/faviconMH.png">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/recipeOverview.css">
+    <script src="./assets/js/script.js" defer></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="superNav">
+                <a href="./index.html">Forside</a>
+            </div>
+            <div class="superNav">
+                <a href="./recipeOverview.html">Kødinhold</a>
+                <div class="subNav">
+                    <a href="./recipeOverview.html">Rød Kød</a>
+                    <a href="./recipeOverview.html">Hvidt Kød</a>
+                    <a href="./recipeOverview.html">Fisk og Skaldyr</a>
+                    <a href="./recipeOverview.html">Vegetar og Vegansk</a>
+                </div>
+            </div>
+            <div class="superNav">
+                <a href="./recipeOverview.html">Højtider</a>
+                <div class="subNav">
+                    <a href="./recipeOverview.html">Påske</a>
+                    <a href="./recipeOverview.html">Jul</a>
+                </div>
+            </div>
+            <div class="superNav">
+                <a href="./recipeOverview.html">Hurtigt og Nemt</a>
+                <div class="subNav">
+                    <a href="./recipeOverview.html">Hurtigt</a>
+                    <a href="./recipeOverview.html">Nemt</a>
+                </div>
+            </div>
+            <div class="superNav">
+                <a href="./recipeOverview.html">Geografisk</a>
+                <div class="subNav">
+                    <a href="./recipeOverview.html">Europæisk</a>
+                    <a href="./recipeOverview.html">Asiatisk</a>
+                    <a href="./recipeOverview.html">Afrikansk</a>
+                    <a href="./recipeOverview.html">Amerikansk</a>
+                </div>
+            </div>
+            <div class="superNav">
+                <a href="./recipeOverview.html">Måltidtyper</a>
+                <div class="subNav">
+                    <a href="./recipeOverview.html">Morgenmad</a>
+                    <a href="./recipeOverview.html">Frokost</a>
+                    <a href="./recipeOverview.html">Aftensmad</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="hero">
+            <h2>Lorem, ipsum dolor.</h2> <br>
+            <p>Lorem ipsum dolor sit amet consectetur.</p>
+        </section>
+        <section class="recommendations">
+            <h2>Vores anbefalinger</h2>
+            <div class="recommendationsContainer">
+            </div>
+        </section>
+        <section class="recipeOverview">
+            <div class="filter">
+                <h4>Filtrering</h4>
+                <div class="filterCatagory">
+                    <h5>Kødindhold</h5>
+                    <span>
+                        <label for="beef">Oksekød</label>
+                        <input type="checkbox" id="beef" name="beef">
+                    </span>
+                    <span>
+                        <label for="pork">Grisekød</label>
+                        <input type="checkbox" id="pork" name="pork">
+                    </span>
+                    <span>
+                        <label for="chicken">Kylling</label>
+                        <input type="checkbox" id="chicken" name="chicken">
+                    </span>
+                    <span>
+                        <label for="fishNcrustaceans">Fisk og Skaldyr</label>
+                        <input type="checkbox" id="fishNcrustaceans" name="fishNcrustaceans">
+                    </span>
+                    <span>
+                        <label for="vegetarian">Vegetar</label>
+                        <input type="checkbox" id="vegetarian" name="vegetarian">
+                    </span>
+                    <span>
+                        <label for="vegan">Vegansk</label>
+                        <input type="checkbox" id="vegan" name="vegan">
+                    </span>
+                </div>
+                <div class="filterCatagory">
+                    <h5>Tilberedningstid</h5>
+                    <span>
+                        <label for="short">Under 30 min</label>
+                        <input type="checkbox" id="short" name="short">
+                    </span>
+                    <span>
+                        <label for="midShort">30 - 45 min</label>
+                        <input type="checkbox" id="midShort" name="midShort">
+                    </span>
+                    <span>
+                        <label for="midLong">45 - 60 min</label>
+                        <input type="checkbox" id="midLong" name="midLong">
+                    </span>
+                    <span>
+                        <label for="long">60+ min</label>
+                        <input type="checkbox" id="long" name="long">
+                    </span>
+                </div>
+                <div class="filterCatagory">
+                    <h5>Måltid</h5>
+                    <span>
+                        <label for="dinner">Aftensmad</label>
+                        <input type="checkbox" id="dinner" name="dinner">
+                    </span>
+                    <span>
+                        <label for="lunch">Middagsmad</label>
+                        <input type="checkbox" id="lunch" name="lunch">
+                    </span>
+                    <span>
+                        <label for="breakfast">Morgenmad</label>
+                        <input type="checkbox" id="breakfast" name="breakfast">
+                    </span>
+                </div>
+            </div>
+            <div class="overview">
+                <article>
+                    <div class="articleImg"></div>
+                    <div class="cardInfo">
+                        <h3>Lorem, ipsum dolor.</h3>
+                        <div>
+                            <img src="./assets/img/icons/clock-regular.svg"alt="" class="infoIcon">
+                            <p>15 min</p>
+                            <img src="" alt="" class="infoIcon">
+                        </div>
+                    </div>
+                </article>
+                <article>
+                    <div class="articleImg"></div>
+                    <div class="cardInfo">
+                        <h3>Lorem, ipsum dolor.</h3>
+                        <div>
+                            <img src="./assets/img/icons/clock-regular.svg"alt="" class="infoIcon">
+                            <p>15 min</p>
+                            <img src="" alt="" class="infoIcon">
+                        </div>
+                    </div>
+                </article>
+                <article>
+                    <div class="articleImg"></div>
+                    <div class="cardInfo">
+                        <h3>Lorem, ipsum dolor.</h3>
+                        <div>
+                            <img src="./assets/img/icons/clock-regular.svg"alt="" class="infoIcon">
+                            <p>15 min</p>
+                            <img src="" alt="" class="infoIcon">
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <section class="footer">
+            <div>
+                <p><a href="tel:+4530250272">76 24 20 69</a></p>
+                <!--TLF to Martin Winther Clausen, just so that some rando don't randomly get called-->
+                <p>Adresse: Ballademagervej 556 <br> 9000 Aalborg</p>
+            </div>
+            <div class="soMe">
+                <a href="https://www.instagram.com/foodista/" target="_blank"><img src="./assets/img/icons/instagram.svg" alt="Instagram Ikon"></a>
+                <a href="https://www.pinterest.com/foodista/" target="_blank"><img src="./assets/img/icons/pinterest-p.svg" alt="Pinterest Ikon"></a>
+                <a href="https://twitter.com/i/flow/login?redirect_after_login=%2Ffoodista" target="_blank"><img src="./assets/img/icons/twitter.svg" alt=" Twitter Ikon"></a>
+                <a href="https://www.facebook.com/Foodista" target="_blank"><img src="./assets/img/icons/facebook-f.svg" alt="Facebook Ikon"></a>
+            </div>
+            <div class="faq">
+                <a href="#"><p>FAQ</p></a>
+            </div>
+        </section>
+    </footer>
+</body>
+</html>
