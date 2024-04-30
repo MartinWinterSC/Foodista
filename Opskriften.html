@@ -17,6 +17,7 @@
       href="https://fonts.googleapis.com/css2?family=Lobster&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
       rel="stylesheet"
     />
+    <script src="assets/js/opskrift.js"defer></script>
 
     <title>Opskriften</title>
   </head>
@@ -73,13 +74,11 @@
           <div class="portionSize">
             <h3 class="">Servering</h3>
             <div class="plusAndMinusPortionSize">
-              <button class="recip_lessOrMoreBtn">
-                <i class="fa-solid fa-minus"></i>
-              </button>
-              <p class="recipe_portionResult">1 person</p>
-              <button class="recip_lessOrMoreBtn">
-                <i class="fa-solid fa-plus"></i>
-              </button>
+              <button class="recipe_lessOrMoreBtn" id="minus">-</button>
+              <div class="recipe_portionResult">
+                <p><input value="1" id="input"><i class="fa-solid fa-person"></i></p>
+              </div>
+              <button class="recipe_lessOrMoreBtn" id="plus">+</button>
             </div>
           </div>
           <div class="ingredientlist">
@@ -90,34 +89,34 @@
                   4 6-ounces pork chops, bone in salt and pepper flour for
                   dredging
                 </p>
-                <input type="radio" />
+                <input type="checkbox" />
               </li>
               <li>
                 <p>1 small shallot, minced</p>
-                <input type="radio" />
+                <input type="checkbox" />
               </li>
               <li>
                 <p>
                   2 cups assorted mushrooms: shiitakes, chanterelle, cremini,
                   tip end removed and sliced
                 </p>
-                <input type="radio" />
+                <input type="checkbox" />
               </li>
               <li>
                 <p>1 teaspoon chopped fresh thyme</p>
-                <input type="radio" />
+                <input type="checkbox" />
               </li>
               <li>
                 <p>⅓ cup white wine</p>
-                <input type="radio" />
+                <input type="checkbox" />
               </li>
               <li>
                 <p>¼ cup chicken broth</p>
-                <input type="radio" />
+                <input type="checkbox" />
               </li>
               <li id="borderbttmOnList">
                 <p>2 tablespoons unsalted butter olive oil as needed</p>
-                <input type="radio" />
+                <input type="checkbox" />
               </li>
             </ul>
           </div>
@@ -125,40 +124,37 @@
         <div class="preparation">
           <h2 class="cookingTitle">Fremgangsmåde</h2>
           <div>
-            
-              <p id="cookingText_margin">
-                Season the pork chops generously with salt and pepper. Dredge in
-                the flour and shake off any excess.
-              </p>
-            
-              <p id="cookingText_margin">
-                Pour oil into a large skillet to a depth of 1/8 of an inch
-                and heat over high heat until the surface of the oil is
-                shimmering but not smoking. Add the pork chops and pan- fry them
-                on one side until golden brown, 3 to 4 minutes.
-              </p>
-              <p id="cookingText_margin">
-                Turn carefully the chops over and continue cooking on the second side until the
-                chops are cooked through and the exterior is golden brown.
-                Transfer them to a warm place and cover with aluminum foil to
-                keep warm. Pour off allthe fat except 2 tablespoons of the oil.
-                Add the shallots to the skillet and sauté over medium heat until
-                translucent, about 1 minute. Increase the heat to high and add
-                the mushrooms and thyme and sauté until the mushrooms are
-                lightly brown, 3-4 minutes.
-              </p>
-              <p id="cookingText_margin">
-                Add the wine and stir to deglaze the pan, scraping up any browned bits from the bottom.
-                Add the broth and any juices released from the chops. Simmer
-                over high heat until the liquid has reduced by about half, 5 to
-                7 minutes.
-              </p>
-              <p id="cookingText_margin">
-                Swirl in the butter to thicken the sauce slightly. Serve
-                the pork chops immediately with the sauce.
-              </p>
-              
-            
+            <p id="cookingText_margin">
+              Season the pork chops generously with salt and pepper. Dredge in
+              the flour and shake off any excess.
+            </p>
+
+            <p id="cookingText_margin">
+              Pour oil into a large skillet to a depth of 1/8 of an inch and
+              heat over high heat until the surface of the oil is shimmering but
+              not smoking. Add the pork chops and pan- fry them on one side
+              until golden brown, 3 to 4 minutes.
+            </p>
+            <p id="cookingText_margin">
+              Turn carefully the chops over and continue cooking on the second
+              side until the chops are cooked through and the exterior is golden
+              brown. Transfer them to a warm place and cover with aluminum foil
+              to keep warm. Pour off allthe fat except 2 tablespoons of the oil.
+              Add the shallots to the skillet and sauté over medium heat until
+              translucent, about 1 minute. Increase the heat to high and add the
+              mushrooms and thyme and sauté until the mushrooms are lightly
+              brown, 3-4 minutes.
+            </p>
+            <p id="cookingText_margin">
+              Add the wine and stir to deglaze the pan, scraping up any browned
+              bits from the bottom. Add the broth and any juices released from
+              the chops. Simmer over high heat until the liquid has reduced by
+              about half, 5 to 7 minutes.
+            </p>
+            <p id="cookingText_margin">
+              Swirl in the butter to thicken the sauce slightly. Serve the pork
+              chops immediately with the sauce.
+            </p>
           </div>
         </div>
       </section>
