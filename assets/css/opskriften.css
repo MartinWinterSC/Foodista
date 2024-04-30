@@ -54,7 +54,6 @@ h1{
 .plusAndMinusPortionSize{
     display: flex;
     align-items: center;
-    /* background-color: white; */
     width: fit-content;
     margin-top: 1rem;
     border: 4px;
@@ -64,7 +63,6 @@ h1{
     background-color: white;
     border: none;
     text-align: center;
-    /* margin: .5rem 1rem .5rem 1rem; */
     padding: 1rem 1.5rem 1rem 1.5rem;
     cursor: pointer;
     border-right: 2px solid #faebd7;
@@ -94,7 +92,7 @@ h1{
     list-style-type: none;
     background-color: white;
     margin-top: .2rem;
-    padding: .5rem;
+    padding: 1rem 1.5rem 1rem 1.5rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
