@@ -7,6 +7,13 @@ body{
     margin: 10%;
     line-height: 28px;
 }
+.breadcrump li{
+    display: inline;
+    font-size: 18px;
+    padding: 10px;
+    margin: 20px;
+}
+
 h1{
     font-family: lobster;
 }
@@ -91,6 +98,12 @@ h1{
     border: unset;
     width: 1vw;
 }
+.fa-person{
+    font-size: 18px;
+    padding: 0 .5rem 0 .5rem;
+}
+
+
 .ingredientlist{
     margin-top: 2rem;
 }
