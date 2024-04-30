@@ -7,9 +7,10 @@ const urlCategoryRecipe = "?categories=3&per_page=100";
 fetch(baseURL + urlCategoryRecipe)
   .then((res) => res.json())
   .then((posts) => {
-    console.log(posts)
+    console.log(posts);
 
-    const shuffledPosts = posts.sort(() => 0.5 - Math.random());
+    // Create a deep copy of posts for shuffling
+    const shuffledPosts = [...posts].sort(() => 0.5 - Math.random());
     const selectedPosts = shuffledPosts.slice(0, 4);
 
     favContainerEl.innerHTML = '';
@@ -23,7 +24,7 @@ fetch(baseURL + urlCategoryRecipe)
             <h3>${post.acf.title}</h3>
             <div>
               <img src="./assets/img/icons/clock-regular.svg" alt="" class="infoIcon">
-              <p>${post.acf.cooking_time.name}</p>
+              <p>${post.acf.cooking_time ? post.acf.cooking_time.name : 'No cooking time available'}</p>
               <img src="./assets/img/icons/utensils-solid.svg" alt="" class="infoIcon">
             </div>
           </div>
@@ -31,6 +32,7 @@ fetch(baseURL + urlCategoryRecipe)
       favContainerEl.innerHTML += favArticleHTML;
     });
 
+    // Use the original posts array for rendering all recipes
     posts.forEach((post) => {
       const articleHTML = `
         <article>
@@ -39,7 +41,7 @@ fetch(baseURL + urlCategoryRecipe)
             <h3>${post.acf.title}</h3>
             <div>
               <img src="./assets/img/icons/clock-regular.svg" alt="" class="infoIcon">
-              <p>${post.acf.cooking_time.name}</p>
+              <p>${post.acf.cooking_time ? post.acf.cooking_time.name : 'No cooking time available'}</p>
               <img src="./assets/img/icons/utensils-solid.svg" alt="" class="infoIcon">
             </div>
           </div>
