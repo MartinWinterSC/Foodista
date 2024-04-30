@@ -63,7 +63,7 @@ h1{
     background-color: white;
     border: none;
     text-align: center;
-    padding: 1rem 1.5rem 1rem 1.5rem;
+    padding: .65rem 1.5rem .65rem 1.5rem ;
     cursor: pointer;
     border-right: 2px solid #faebd7;
     border-left: 2px solid #faebd7;
@@ -73,11 +73,23 @@ h1{
     background-color: white;
 
 }
-#recipe_lessBtn{
+#minus{
     border-radius: 6px 0 0 6px;
+    box-sizing: border-box;
+    font-size: 20px;
+    font-weight: 100;
+    text-align: center;
 }
-#recipe_moreBtn{
+
+#plus{
     border-radius: 0 6px 6px 0;
+    box-sizing: border-box;
+    font-size: 20px;
+    font-weight: 100;
+}
+#input{
+    border: unset;
+    width: 1vw;
 }
 .ingredientlist{
     margin-top: 2rem;

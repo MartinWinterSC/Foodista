@@ -17,6 +17,7 @@
       href="https://fonts.googleapis.com/css2?family=Lobster&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
       rel="stylesheet"
     />
+    <script src="assets/js/opskrift.js"defer></script>
 
     <title>Opskriften</title>
   </head>
@@ -73,14 +74,14 @@
           <div class="portionSize">
             <h3 class="">Servering</h3>
             <div class="plusAndMinusPortionSize">
-              <button class="recipe_lessOrMoreBtn" id="recipe_lessBtn">
-                <i class="fa-solid fa-minus"></i>
+              <button class="recipe_lessOrMoreBtn" id="minus">
+                <p>-</p>
               </button>
               <div class="recipe_portionResult">
-                <p>1 person</p>
+                <p><input value="1" id="input"><i class="fa-solid fa-person"></i></p>
               </div>
-              <button class="recipe_lessOrMoreBtn" id="recipe_moreBtn">
-                <i class="fa-solid fa-plus"></i>
+              <button class="recipe_lessOrMoreBtn" id="plus">
+                <!-- <i class="fa-solid fa-plus"></i> -->+
               </button>
             </div>
           </div>
