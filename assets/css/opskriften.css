@@ -1,0 +1,149 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    margin: 10%;
+    line-height: 28px;
+}
+.breadcrump li{
+    display: inline;
+    font-size: 18px;
+    padding: 10px;
+    margin: 20px;
+}
+
+h1{
+    font-family: lobster;
+}
+.cookTimeIcon {
+    display: flex;
+    align-items: center;
+    color: #8e8e8e;
+}
+.cookTime{
+    margin-left: 10px;
+}
+#recipeInfoAndIcon{
+    margin: 20px 0 20px 0; 
+}
+.animatedIcon, a{
+    color: #F27D15;
+    font-size: 18px;
+}
+#iconText{
+    color: #8e8e8e;
+    margin-top: 4px;
+}
+.recipeFunctions{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 20px;
+    cursor: pointer;
+    
+}
+#recipeInfoAndIcon{
+    display: flex;
+}
+.recipeInfo{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.pecipePicture{
+    width: 100%;
+    height: 100%; 
+}
+.recipeText{
+    margin: 1rem 2.5rem 1rem 2.5rem;
+}
+.plusAndMinusPortionSize{
+    display: flex;
+    align-items: center;
+    width: fit-content;
+    margin-top: 1rem;
+    border: 4px;
+    
+}
+.recipe_lessOrMoreBtn{
+    background-color: white;
+    border: none;
+    text-align: center;
+    padding: .65rem 1.5rem .65rem 1.5rem ;
+    cursor: pointer;
+    border-right: 2px solid #faebd7;
+    border-left: 2px solid #faebd7;
+}
+.recipe_portionResult{
+    padding: .5rem;
+    background-color: white;
+
+}
+#minus{
+    border-radius: 6px 0 0 6px;
+    box-sizing: border-box;
+    font-size: 20px;
+    font-weight: 100;
+    text-align: center;
+}
+
+#plus{
+    border-radius: 0 6px 6px 0;
+    box-sizing: border-box;
+    font-size: 20px;
+    font-weight: 100;
+}
+#input{
+    border: unset;
+    width: 1vw;
+}
+.fa-person{
+    font-size: 18px;
+    padding: 0 .5rem 0 .5rem;
+}
+
+
+.ingredientlist{
+    margin-top: 2rem;
+}
+.recipe_ingredientSection {
+    background-color: #faebd7;
+    margin-top: 1rem; 
+    padding: 2rem;
+}
+
+.recipe_checklistOfIngredient li {
+    list-style-type: none;
+    background-color: white;
+    margin-top: .2rem;
+    padding: 1rem 1.5rem 1rem 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#borderOnList{
+    border-radius: 6px 6px 0 0;
+    margin-top: 1rem ;
+}
+#borderbttmOnList{
+    border-radius: 0 0 6px 6px;
+}
+.cookingTitle{
+    margin-bottom: 2rem;
+}
+.recipe_cookingInfo{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.preparation{
+    padding: 2.5rem;
+    border-top: 2px solid #FCF1DF;
+    margin-top: 1rem;
+}
+#cookingText_margin{
+    margin-bottom: 1rem ;
+}
+
+
+

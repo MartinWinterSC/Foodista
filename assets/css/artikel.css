@@ -1,0 +1,309 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+    --backgroundLightYellow: hsla(37, 83%, 93%, 0.75);
+    --backgroundOrange: #F2AE2F;
+    --red: #D95625;
+    --stndSpacing: 1rem;
+    --largeSpacing: 2rem;
+
+}
+
+body {
+        font-family: "Poppins", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+}
+
+/* breadcrumbs */
+.breadcrumbsContainer a {
+    color: black;
+    font-style: italic;
+    font-size: .8rem;
+    transition: .3s ease-in-out;
+}
+
+.breadcrumbsContainer a:hover {
+    color: var(--red);
+    border-bottom: 1px solid #D95625;
+}
+
+.breadcrumbsContainer {
+    margin: 0 5%;
+    display: flex;
+    gap: .5rem;
+}
+
+/* intro section */
+.mainContainer {
+    margin-top: 1rem;
+}
+
+.titleIntro {
+    text-align: center;
+    padding: 1rem;
+    font-size: 1.5rem;
+}
+
+.introTextContainer {
+    margin: 0 5%;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    justify-content: center;
+    gap: 1rem;
+    height: fit-content;
+    margin-bottom: 5%;
+}
+
+.text {
+    background-color: var(--backgroundLightYellow);
+    grid-column: 0 / 1;
+    display: flex;
+    justify-content: center;
+    font-size: 24px;
+    line-height: 1.8rem;
+    padding: 1.5rem;
+    border-radius: 10px;
+}
+
+.text p {
+    padding: 0 1rem;
+    max-width: 70ch;
+}
+
+.authorContainer {
+    display: flex;
+    justify-content: center;
+    grid-column: 2 / 3;
+    height: 100%;
+    background-color: var(--backgroundLightYellow);
+    border-radius: 10px;
+}
+
+.authorTextContainer {
+    padding: 1rem;
+}
+
+.authorContainer img {
+    max-height: 41vh;
+    border-radius: 10px;
+}
+
+.title1 {
+    font-weight: 200;
+}
+
+.titleBold {
+    font-weight: 800;
+    font-style: italic;
+    font-size: 20px;
+    margin: .3rem 0;
+}
+
+.textAuthor {
+    font-size: 16px;
+    line-height: 1.4rem;
+}
+
+/* Artikel section */
+.recipeDiabetesContainer {
+    width: 100vw;
+    margin-bottom: 4rem;
+}
+
+.diabetesTextContentContainer {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+}
+
+.recipeArticleHero1 {
+    background-image: url(../img/pictures/cubastylePork.jpg);
+    height: 40vh;
+    width: 100vw; 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    transition: 0.3s ease-in-out;
+}
+
+.recipeArticleHero1:hover {
+     background-image:linear-gradient( rgba(0, 0, 0, 0.538), rgba(0, 0, 0, 0.25)), url(../img/pictures/cubastylePork.jpg);
+     cursor: pointer;
+     transition: .3 ease-in-out;
+}
+
+.recipeArticleHero2 {
+    background-image: url(../img/pictures/morningmuffin.jpg);
+    height: 40vh;
+    max-width: 100vw; 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+}
+
+.recipeArticleHero2:hover {
+    background-image:linear-gradient( rgba(0, 0, 0, 0.538), rgba(0, 0, 0, 0.25)), url(../img/pictures/morningmuffin.jpg);
+    cursor: pointer;
+    transition: .3 ease-in-out;
+}
+
+.recipeArticleHero3 {
+    background-image: url(../img/pictures/salmondiabetes.jpg);
+    height: 40vh;
+    max-width: 100vw; 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+}
+
+.recipeArticleHero3:hover {
+    background-image:linear-gradient( rgba(0, 0, 0, 0.538), rgba(0, 0, 0, 0.25)), url(../img/pictures/salmondiabetes.jpg);
+    cursor: pointer;
+    transition: .3 ease-in-out;
+}
+
+.recipeArticleHero4 {
+    background-image: url(../img/pictures/strawberryCake1.jpg);
+    height: 40vh;
+    max-width: 100vw; 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+}
+
+.recipeArticleHero4:hover {
+    background-image:linear-gradient( rgba(0, 0, 0, 0.538), rgba(0, 0, 0, 0.25)), url(../img/pictures/strawberryCake1.jpg);
+    cursor: pointer;
+    transition: .3 ease-in-out;
+}
+
+.recipeArticleHero5 {
+    background-image: url(../img/pictures/kale1.png);
+    height: 40vh;   
+    max-width: 100vw; 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+}
+
+.recipeArticleHero5:hover {
+    background-image:linear-gradient( rgba(0, 0, 0, 0.538), rgba(0, 0, 0, 0.25)), url(../img/pictures/kale1.png);
+    cursor: pointer;
+    transition: .3 ease-in-out;
+}
+
+.heroArticleText {
+    color: white;
+    font-family: "Lobster", sans-serif;
+    background-color: var(--backgroundOrange);
+    width: fit-content;
+    padding: .5rem;
+    text-align: center;
+    font-size: 1.8rem;
+    margin-top: var(--largeSpacing);
+}
+
+.diabetesTextContainer {
+    background-color: var(--backgroundOrange);
+    color: white;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    margin-right: 1rem;
+}
+
+.diabetesTextContainer p {
+    margin: 0 5%;
+    padding: 1rem .5rem; 
+    font-size: 16px;
+    line-height: 1.6rem;
+    width: 76ch;
+}
+
+.diabetesArticleTag {
+    background-color: var(--backgroundLightYellow);
+    color: var(--red);
+    padding: var(--stndSpacing);
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.tagsDiabetes {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+.tagsDiabetes li {
+    list-style-type: none;
+}
+
+
+/* artikel section end */
+
+/* Cards mere inspiration */
+/* focused entry points */
+.fep{
+    margin-top: var(--sectionSpacing);
+    margin-bottom: var(--sectionSpacing);
+    margin-left: 15vw;
+    margin-right: 15vw;
+}
+.fep h4{
+    font-size: 1.5rem;
+    text-align: center;
+    margin-bottom: var(--generalSpacing);
+}
+.fepContainer{
+    height: 300px;
+    gap: var(--generalSpacing);
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+.fepSingle{
+    position: relative;
+    border-radius: 5px;
+}
+#fep1{
+    background: url('../img/pictures/Placeholder.png') center no-repeat;
+}
+#fep2{
+    background: url('../img/pictures/Placeholder.png') center no-repeat;
+}
+#fep3{
+    background: url('../img/pictures/Placeholder.png') center no-repeat;
+}
+.overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(217, 86, 37, 0.5);
+    border-radius: 5px;
+}
+.fep h5{
+    color: white;
+    font-size: 1rem;
+    position: absolute;
+    top: 50%;
+    right: 50%;
+    transform: translate(50%, -50%);
+}
