@@ -1,5 +1,5 @@
-const favContainerEl = document.querySelector(".recommendationsContainer");
-const renderRecipesEL = document.querySelector(".overview");
+const favContainerEL = document.querySelector(".recommendationsContainer");
+const generalContainerEL = document.querySelector(".overview");
 
 const baseURL = "https://foodapi.starsingh.dk/wp-json/wp/v2/posts";
 const urlCategoryRecipe = "?categories=3&per_page=100";
@@ -9,15 +9,14 @@ fetch(baseURL + urlCategoryRecipe)
   .then((posts) => {
     console.log(posts);
 
-    // Create a deep copy of posts for shuffling
     const shuffledPosts = [...posts].sort(() => 0.5 - Math.random());
     const selectedPosts = shuffledPosts.slice(0, 4);
 
-    favContainerEl.innerHTML = '';
-    renderRecipesEL.innerHTML = '';
+    favContainerEL.innerHTML = '';
+    generalContainerEL.innerHTML = '';
 
     selectedPosts.forEach((post) => {
-      const favArticleHTML = `
+      const renderFavArticle = `
         <article>
         <a href="./Opskriften.html?id=${post.id}">
           <div class="articleImg" style="background: url('${post.acf.image.link}') center no-repeat;"></div>
@@ -25,18 +24,17 @@ fetch(baseURL + urlCategoryRecipe)
             <h3>${post.acf.title}</h3>
             <div>
               <img src="./assets/img/icons/clock-regular.svg" alt="" class="infoIcon">
-              <p>${post.acf.cooking_time ? post.acf.cooking_time.name : 'No cooking time available'}</p>
+              <p>${post.acf.cooking_time ? post.acf.cooking_time.name : ''}</p>
               <img src="./assets/img/icons/utensils-solid.svg" alt="" class="infoIcon">
             </div>
           </div>
         </a>
         </article>`;
-      favContainerEl.innerHTML += favArticleHTML;
+      favContainerEL.innerHTML += renderFavArticle;
     });
 
-    // Use the original posts array for rendering all recipes
     posts.forEach((post) => {
-      const articleHTML = `
+      const renderGeneralArticle = `
         <article>
         <a href="./Opskriften.html?id=${post.id}">
           <div class="articleImg" style="background: url('${post.acf.image.link}') center no-repeat;"></div>
@@ -44,15 +42,15 @@ fetch(baseURL + urlCategoryRecipe)
             <h3>${post.acf.title}</h3>
             <div>
               <img src="./assets/img/icons/clock-regular.svg" alt="" class="infoIcon">
-              <p>${post.acf.cooking_time ? post.acf.cooking_time.name : 'No cooking time available'}</p>
+              <p>${post.acf.cooking_time ? post.acf.cooking_time.name : ''}</p>
               <img src="./assets/img/icons/utensils-solid.svg" alt="" class="infoIcon">
             </div>
           </div>
         </a>
         </article>`;
-      renderRecipesEL.innerHTML += articleHTML;
+      generalContainerEL.innerHTML += renderGeneralArticle;
     });
   })
   .catch((err) => {
-    console.log("Something went wrong, try again later", err);
+    console.error("Something went wrong, try again later", err);
   });

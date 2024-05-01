@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="da">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="description" content="">
+        <meta name="keywords" content="">
+        <meta name="author" content="MMD23, modul 5, Gruppe 8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Madens Helte | </title>
+        <link rel="icon" type="image/x-icon" href="./assets/img/favicon/faviconMH.png">
+        <link rel="stylesheet" href="./assets/css/style.css">
+        <link rel="stylesheet" href="./assets/css/opskriften.css">
+        <script src="./assets/js/opskrift.js" defer></script>
+    </head>
+    <body>
+        <header>
+            <nav>
+                <div class="superNav">
+                    <a href="./index.html">Forside</a>
+                </div>
+                <div class="superNav">
+                    <a href="./recipeOverview.html">Kødinhold</a>
+                    <div class="subNav">
+                        <a href="./recipeOverview.html">Rød Kød</a>
+                        <a href="./recipeOverview.html">Hvidt Kød</a>
+                        <a href="./recipeOverview.html">Fisk og Skaldyr</a>
+                        <a href="./recipeOverview.html">Vegetar og Vegansk</a>
+                    </div>
+                </div>
+                <div class="superNav">
+                    <a href="./recipeOverview.html">Højtider</a>
+                    <div class="subNav">
+                        <a href="./recipeOverview.html">Påske</a>
+                        <a href="./recipeOverview.html">Jul</a>
+                    </div>
+                </div>
+                <div class="superNav">
+                    <a href="./recipeOverview.html">Hurtigt og Nemt</a>
+                    <div class="subNav">
+                        <a href="./recipeOverview.html">Hurtigt</a>
+                        <a href="./recipeOverview.html">Nemt</a>
+                    </div>
+                </div>
+                <div class="superNav">
+                    <a href="./recipeOverview.html">Geografisk</a>
+                    <div class="subNav">
+                        <a href="./recipeOverview.html">Europæisk</a>
+                        <a href="./recipeOverview.html">Asiatisk</a>
+                        <a href="./recipeOverview.html">Afrikansk</a>
+                        <a href="./recipeOverview.html">Amerikansk</a>
+                    </div>
+                </div>
+                <div class="superNav">
+                    <a href="./recipeOverview.html">Måltidtyper</a>
+                    <div class="subNav">
+                        <a href="./recipeOverview.html">Morgenmad</a>
+                        <a href="./recipeOverview.html">Frokost</a>
+                        <a href="./recipeOverview.html">Aftensmad</a>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <main>
+            <article>
+                <div class="recipeInfo">
+                    <img class="recipePicture" src="assets/img/pictures/ porkChopswith MushroomsRagout.jpeg" alt="">
+                    <div class="recipeText">
+                        <h1>Pork Chops with Mushrooms Ragout</h1>
+                        <div class="cookTimeIcon" id="recipeInfoAndIcon">
+                            <i class="fa-regular fa-clock recipeIcons"></i>
+                            <p class="cookTime">15 - 30 min</p>
+                        </div>
+                        <div class="animatedIcon" id="recipeInfoAndIcon">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star-half-stroke"></i>
+                        </div>
+                        <p class="recipeDescription" id="recipeInfoAndIcon"> Pork Chops with Mushrooms Ragout. Temperatures are dropping. The leaves are turning into a beautiful golden color. I am ready for cozying up on the couch with my warm blanket.</p>
+                        <div class="recipeTags">
+                            <a href="#">Hurtigt</a>
+                            <a href="#">Nemt</a>
+                        </div>
+                        <div id="recipeInfoAndIcon">
+                            <div class="recipeFunctions">
+                                <i class="fa-regular fa-bookmark animatedIcon"></i>
+                                <p id="iconText">Gem</p>
+                            </div>
+                            <div class="recipeFunctions">
+                                <i class="fa-solid fa-arrow-up-from-bracket animatedIcon"></i>
+                                <p id="iconText">Del</p>
+                            </div>
+                            <div class="recipeFunctions">
+                                <i class="fa-solid fa-print animatedIcon"></i>
+                                <p id="iconText">Print</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </article>
+            <section class="recipe_cookingInfo">
+                <div class="recipe_ingredientSection">
+                    <div class="portionSize">
+                        <h3 class="">Servering</h3>
+                        <div class="plusAndMinusPortionSize">
+                            <button class="recipe_lessOrMoreBtn" id="minus">-</button>
+                            <div class="recipe_portionResult">
+                                <p><input value="1" id="input"><i class="fa-solid fa-person"></i></p>
+                            </div>
+                            <button class="recipe_lessOrMoreBtn" id="plus">+</button>
+                        </div>
+                    </div>
+                    <div class="ingredientlist">
+                        <h2 class="ingredientListTitle">Ingredienser</h2>
+                        <ul class="recipe_checklistOfIngredient">
+                            <li id="borderOnList">
+                                <p>4 6-ounces pork chops, bone in salt and pepper flour for dredging</p>
+                                <input type="checkbox">
+                            </li>
+                            <li>
+                              <p>1 small shallot, minced</p>
+                              <input type="checkbox">
+                            </li>
+                            <li>
+                                <p>2 cups assorted mushrooms: shiitakes, chanterelle, cremini, tip end removed and sliced
+                                </p>
+                                <input type="checkbox">
+                            </li>
+                            <li>
+                                <p>1 teaspoon chopped fresh thyme</p>
+                                <input type="checkbox">
+                            </li>
+                            <li>
+                                <p>⅓ cup white wine</p>
+                                <input type="checkbox">
+                            </li>
+                            <li>
+                                <p>¼ cup chicken broth</p>
+                                <input type="checkbox">
+                            </li>
+                            <li id="borderbttmOnList">
+                                <p>2 tablespoons unsalted butter olive oil as needed</p>
+                                <input type="checkbox">
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="preparation">
+                    <h2 class="cookingTitle">Fremgangsmåde</h2>
+                    <div>
+                        <p id="cookingText_margin">Season the pork chops generously with salt and pepper. Dredge in
+                        the flour and shake off any excess.</p>
+                        <p id="cookingText_margin">Pour oil into a large skillet to a depth of 1/8 of an inch and heat over high heat until the surface of the oil is shimmering butnot smoking. Add the pork chops and pan- fry them on one sideuntil golden brown, 3 to 4 minutes.</p>
+                        <p id="cookingText_margin">Turn carefully the chops over and continue cooking on the second side until the chops are cooked through and the exterior is golden to keep warm. Pour off allthe fat except 2 tablespoons of the oil. translucent, about 1 minute. Increase the heat to high and add the brown, 3-4 minutes.</p>
+                        <p id="cookingText_margin">Add the wine and stir to deglaze the pan, scraping up any browned bits from the bottom. Add the broth and any juices released from the chops. Simmer over high heat until the liquid has reduced by about half, 5 to 7 minutes.</p>
+                        <p id="cookingText_margin">Swirl in the butter to thicken the sauce slightly. Serve the pork chops immediately with the sauce.</p>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer>
+            <section class="footer">
+                <div>
+                    <p><a href="tel:+4530250272">76 24 20 69</a></p>
+                    <!--TLF to Martin Winther Clausen, just so that some rando don't randomly get called-->
+                    <p>Adresse: Ballademagervej 556 <br> 9000 Aalborg</p>
+                </div>
+                <div class="soMe">
+                    <a href="https://www.instagram.com/foodista/" target="_blank"><img src="./assets/img/icons/instagram.svg" alt="Instagram Ikon"></a>
+                    <a href="https://www.pinterest.com/foodista/" target="_blank"><img src="./assets/img/icons/pinterest-p.svg" alt="Pinterest Ikon"></a>
+                    <a href="https://twitter.com/i/flow/login?redirect_after_login=%2Ffoodista" target="_blank"><img src="./assets/img/icons/twitter.svg" alt=" Twitter Ikon"></a>
+                    <a href="https://www.facebook.com/Foodista" target="_blank"><img src="./assets/img/icons/facebook-f.svg" alt="Facebook Ikon"></a>
+                </div>
+                <div class="faq">
+                    <a href="#"><p>FAQ</p></a>
+                </div>
+            </section>
+        </footer>
+    </body>
+</html>
