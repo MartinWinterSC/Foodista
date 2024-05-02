@@ -38,7 +38,7 @@ document.addEventListener('DOMContentLoaded', function () {
               <h1>${post.title.rendered}</h1>
               <div class="cookTimeIcon" id="recipeInfoAndIcon">
                 <i class="fa-regular fa-clock recipeIcons"></i>
-                <p class="cookTime">${post.acf.cooking_time.name}</p>
+                <p class="cookTime">${post.acf.cooking_time ? post.acf.cooking_time.name : 'Ikke tilgængeligt'}</p>
               </div>
               <p class="recipeDescription" id="recipeInfoAndIcon">
                 ${post.acf.description}

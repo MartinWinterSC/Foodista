@@ -13,58 +13,61 @@
     <link rel="icon" type="image/x-icon" href="./assets/img/favicon/faviconMH.png">
     <link rel="stylesheet" href="./assets/css/style.css">
     <link rel="stylesheet" href="./assets/css/fontpage.css">
+    <script src="./assets/js/articleLoader.js" defer></script>
+    <script src="./assets/js/fepScript.js" defer></script>
 </head>
 <body>
-    <header>
-      <nav>
+  <header>
+    <nav>
         <div class="superNav">
-          <a href="./index.html">Forside</a>
+            <a href="./index.html">Forside</a>
         </div>
         <div class="superNav">
-          <a href="./recipeOverview.html">Kødinhold</a>
-          <div class="subNav">
-            <a href="./recipeOverview.html">Rød Kød</a>
-            <a href="./recipeOverview.html">Hvidt Kød</a>
-            <a href="./recipeOverview.html">Fisk og Skaldyr</a>
-            <a href="./recipeOverview.html">Vegetar og Vegansk</a>
-          </div>
+            <a href="./recipeOverview.html?navID=1">Kødinhold</a>
+            <div class="subNav">
+                <a href="./recipeOverview.html?navID=6">Rød Kød</a>
+                <a href="./recipeOverview.html?navID=7">Hvidt Kød</a>
+                <a href="./recipeOverview.html?navID=8">Fisk og Skaldyr</a>
+                <a href="./recipeOverview.html?navID=9">Vegetar og Vegansk</a>
+            </div>
         </div>
         <div class="superNav">
-          <a href="./recipeOverview.html">Højtider</a>
-          <div class="subNav">
-            <a href="./recipeOverview.html">Påske</a>
-            <a href="./recipeOverview.html">Jul</a>
-          </div>
+            <a href="./recipeOverview.html?navID=2">Højtider</a>
+            <div class="subNav">
+                <a href="./recipeOverview.html?navID=10">Påske</a>
+                <a href="./recipeOverview.html?navID=11">Jul</a>
+            </div>
         </div>
         <div class="superNav">
-          <a href="./recipeOverview.html">Hurtigt og Nemt</a>
-          <div class="subNav">
-            <a href="./recipeOverview.html">Hurtigt</a>
-            <a href="./recipeOverview.html">Nemt</a>
-          </div>
+            <a href="./recipeOverview.html?navID=3">Hurtigt og Nemt</a>
+            <div class="subNav">
+                <a href="./recipeOverview.html?navID=12">Hurtigt</a>
+                <a href="./recipeOverview.html?navID=13">Nemt</a>
+            </div>
         </div>
         <div class="superNav">
-          <a href="./recipeOverview.html">Geografisk</a>
-          <div class="subNav">
-            <a href="./recipeOverview.html">Europæisk</a>
-            <a href="./recipeOverview.html">Asiatisk</a>
-            <a href="./recipeOverview.html">Afrikansk</a>
-            <a href="./recipeOverview.html">Amerikansk</a>
-          </div>
+            <a href="./recipeOverview.html?navID=4">Geografisk</a>
+            <div class="subNav">
+                <a href="./recipeOverview.html?navID=14">Europæisk</a>
+                <a href="./recipeOverview.html?navID=15">Asiatisk</a>
+                <a href="./recipeOverview.html?navID=16">Afrikansk</a>
+                <a href="./recipeOverview.html?navID=17">Amerikansk</a>
+            </div>
         </div>
         <div class="superNav">
-          <a href="./recipeOverview.html">Måltidtyper</a>
-          <div class="subNav">
-            <a href="./recipeOverview.html">Morgenmad</a>
-            <a href="./recipeOverview.html">Frokost</a>
-            <a href="./recipeOverview.html">Aftensmad</a>
-          </div>
+            <a href="./recipeOverview.html?navID=5">Måltidtyper</a>
+            <div class="subNav">
+                <a href="./recipeOverview.html?navID=18">Morgenmad</a>
+                <a href="./recipeOverview.html?navID=19">Frokost</a>
+                <a href="./recipeOverview.html?navID=20">Aftensmad</a>
+            </div>
         </div>
-      </nav>
-    </header>
+    </nav>
+</header>
     <main>
+      <a href="./Opskriften.html?id=177">
       <section class="heroCarousel">
-        <h2>Lorem, ipsum dolor.</h2>
+        <h2>Sweet and Savory Soy Sauce and Brown Sugar Salmon</h2>
         <br>
         <p><a href="#">Se opskriften her</a></p>
         <div class="carouselPositionContainer">
@@ -75,6 +78,7 @@
           <div class="carouselPosition"></div>
         </div>
       </section>
+    </a>
       <section class="intro">
         <p>
           Velkommen til <span>Madens Helte</span> alle fantasiens opskrifter
@@ -125,6 +129,7 @@
           <p class="loadMore">Indlæs flere</p>
         </div>
       </section>
+      <a href="./focusedArticle.html"></a>
       <section class="youtubeVideo">
         <div class="youtubeVideoContainer">
           <h3>Kitchen Secrets: How To Cut Up A Whole Chicken</h3>
@@ -148,27 +153,6 @@
       <section class="fep">
         <h4>Mere inspiration</h4>
         <div class="fepContainer">
-          <article class="fepSingle" id="fep1">
-            <a href="">
-              <div class="overlay">
-                <h5>Lorem, ipsum dolor.</h5>
-              </div>
-            </a>
-          </article>
-          <article class="fepSingle" id="fep2">
-            <a href="">
-              <div class="overlay">
-                <h5>Lorem, ipsum dolor.</h5>
-              </div>
-            </a>
-          </article>
-          <article class="fepSingle" id="fep3">
-            <a href="">
-              <div class="overlay">
-                <h5>Lorem, ipsum dolor.</h5>
-              </div>
-            </a>
-          </article>
         </div>
       </section>
     </main>

@@ -106,14 +106,6 @@ nav{
 .fepSingle{
     position: relative;
     border-radius: 5px;
-}
-#fep1{
-    background: url('../img/pictures/Placeholder.png') center no-repeat;
-}
-#fep2{
-    background: url('../img/pictures/Placeholder.png') center no-repeat;
-}
-#fep3{
     background: url('../img/pictures/Placeholder.png') center no-repeat;
 }
 .overlay{
